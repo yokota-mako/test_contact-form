@@ -20,11 +20,11 @@ Laravel環境構築
 
 ## 使用技術
 
-- ・PHP 8.1
-- ・Laravel 10.0
-- ・MySQL 8.0.26
+- PHP 8.1
+- Laravel 10.0
+- MySQL 8.0.26
 
 ## URL
 
-- ・開発環境：http://localhost/
-- ・php MyAdmin：http://localhost:8080/
+- 開発環境：http://localhost/
+- php MyAdmin：http://localhost:8080/
