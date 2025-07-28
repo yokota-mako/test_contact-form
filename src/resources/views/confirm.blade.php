@@ -20,13 +20,13 @@
     </header>
 
     <main>
-    <?php print_r($contact) ?>
+        <?php print_r($contact) ?>
         <div class="confirm__content">
             <div class="confirm__heading">
                 <h2>Confirm</h2>
             </div>
             <form class="form" action="/contacts" method="post">
-            @csrf
+                @csrf
                 <div class="confirm-table">
                     <table class="confirm-table__inner">
                         <tr class="confirm-table__row">
@@ -51,8 +51,11 @@
                         <tr class="confirm-table__row">
                             <th class="confirm-table__header">電話番号※</th>
                             <td class="confirm-table__text">
-                                <input type="tel" name="tel" value="
-                                {{ $contact['tel'] }}" readonly />
+                                <input type="tel" name="first" value="
+                                {{ $contact['first'] }}" readonly />
+                                <input type="tel" name="second" value="   {{ $contact['second'] }}" readonly />
+                                <input type="tel" name="third" value="
+                                {{ $contact['third'] }}" readonly />
                             </td>
                         </tr>
                         <tr class="confirm-table__row">
@@ -70,13 +73,13 @@
                         <tr class="confirm-table__row">
                             <th class="confirm-table__header">お問い合わせの種類※</th>
                             <td class="confirm-table__select">
-                                <input type="select" name="categories" value="{{ $contact['categories'] }}" readonly />
+                                <input type="select" name="detail" value="{{ $contact['detail'] }}" readonly />
                             </td>
                         </tr>
                         <tr class="confirm-table__row">
                             <th class="confirm-table__header">お問い合わせ内容※</th>
                             <td class="confirm-table__textarea">
-                                <input type="textarea" name="content" value="{{ $contact['content'] }}"readonly />
+                                <input type="textarea" name="content" value="{{ $contact['content'] }}" readonly />
                             </td>
                         </tr>
                     </table>
